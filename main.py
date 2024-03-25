@@ -1,6 +1,7 @@
-print("033[0;1m")
-ver = "VERSION:1.0 GUI:FALSE LANG:ENGLISH"
 import os
+import tools
+import printf
+import terminal
 coldefault = "\033[0;1m"
 colred = "\033[31;1m"
 colgreen = "\033[32;1m"
@@ -13,4 +14,7 @@ if kernel == "nt":
     clear = "cls"
 if kernel == "posix":
     clear = "clear"
+print(coldefault)
 os.system(clear)
+
+
